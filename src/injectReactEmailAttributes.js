@@ -2,12 +2,7 @@
 import 'react-dom'
 
 // FIXME: implement without relying on unstable import locations
-let DOMProperty
-try {
-  DOMProperty = require('react-dom/lib/DOMProperty')
-} catch (e) {
-  DOMProperty = require('react/lib/DOMProperty')
-}
+let DOMProperty = require('react-dom/lib/DOMProperty');
 
 export { DOMProperty as _DOMProperty }
 
